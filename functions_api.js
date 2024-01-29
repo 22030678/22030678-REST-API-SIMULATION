@@ -201,3 +201,115 @@
 // console.log(removeLastUser());
 
 //------------------------------------------------------------------------------------------------------------------------
+
+//6. REMOVEFIRSTUSER, REMOVES THE FIRST ELEMENT FROM THE ARRAY, IT RETURNS THE DELETED ELEMENT AND THE NEW ARRAY.
+// const users =["Yesy", "Rox", "Fer", "Bruno"];
+// function sendReponse(code, body = null) {
+//     const response = {
+//       code,
+//       body,
+//     };
+//     switch (code) {
+//       case 200:
+//         response.msg = "Ok";
+//         break;
+//       case 400:
+//         response.msg = "Endpoint not valid";
+//         break;
+//       case 404:
+//         response.msg = "Not found";
+//         break;
+//       case 500:
+//         response.msg = "Internal Server Error";
+//         break;
+//       default:
+//         response.msg = "Unknown status code";
+//     }
+
+//     return response;
+//   }
+//   function removeFirstUser(){
+//     if(users.length>0){
+//     console.log(users.shift());
+//     console.log(users)
+//     return sendReponse(200);
+//     }
+//     return sendReponse (404) 
+// }
+//   console.log(removeFirstUser());
+
+//--------------------------------------------------------------------------------------------------------------------------
+
+//7. UPDATEUSERBYINDEX, TAKES THE INDEX AND THE NEW VALUE, IF INDEX EXISTS THEN REPLACE THE ELEMENT WITH THE NEW VALUE.
+// const users =["Yesy", "Rox", "Fer", "Bruno"];
+// function sendReponse(code, body = null) {
+//     const response = {
+//       code,
+//       body,
+//     };
+
+//     switch (code) {
+//       case 200:
+//         response.msg = "Ok";
+//         break;
+//       case 400:
+//         response.msg = "Endpoint not valid";
+//         break;
+//       case 404:
+//         response.msg = "Not found";
+//         break;
+//       case 500:
+//         response.msg = "Internal Server Error";
+//         break;
+//       default:
+//         response.msg = "Unknown status code";
+//     }
+
+//     return response;
+//   }
+//   function updateUserByIndex(index, userName){
+//       if (index<=users.length) {
+//       users.splice(index, 0, userName)
+//       console.log (users)
+//       return sendReponse(200);
+//     }
+//     return sendReponse (404)
+// }
+// console.log(updateUserByIndex(5, "Cami"));
+// console.log(updateUserByIndex(2, "Maricruz"));
+
+//----------------------------------------------------------------------------------------------------------------------------------
+
+//8. GETUSERSSIZE, RETURN THE NUMBER OF USERS IN THE ARRAY.
+// const users = ["Yesy", "Rox", "Fer", "Bruno"];
+// function sendReponse(code, body = null) {
+//     const response = {
+//         code,
+//         body,
+//     };
+//     switch (code) {
+//         case 200:
+//             response.msg = "Ok";
+//             break;
+//         case 400:
+//             response.msg = "Endpoint not valid";
+//             break;
+//         case 404:
+//             response.msg = "Not found";
+//             break;
+//         case 500:
+//             response.msg = "Internal Server Error";
+//             break;
+//         default:
+//             response.msg = "Unknown status code";
+//     }
+//     return response;
+// }
+// function getUsersSize() {
+//     if(users.length>0){
+//     console.log("The number of users in the array is:", users.length)
+//     return sendReponse(200);
+//     }
+//     return sendReponse(404)
+// }
+// console.log(getUsersSize());
